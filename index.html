@@ -3,44 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DevOps Demo Project</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Contact Us - DevOps Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header h1 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #34495e;
+    }
+
+    input, textarea {
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      background-color: #2ecc71;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #27ae60;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #7f8c8d;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>🚀 DevOps Project Dashboard</h1>
-      <p>A CI/CD pipeline demonstration using Jenkins, Docker, and GitHub</p>
+      <h1>📬 Contact Us</h1>
+      <p>We’d love to hear from you. Fill out the form below!</p>
     </header>
 
-    <main>
-      <section class="card">
-        <h2>Project Overview</h2>
-        <p>This project showcases a Node.js web app built and deployed via GitHub Actions and Jenkins.</p>
-      </section>
+    <form action="#" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
 
-      <section class="card">
-        <h2>Technologies Used</h2>
-        <ul>
-          <li>Node.js</li>
-          <li>Docker & DockerHub</li>
-          <li>Jenkins</li>
-          <li>Git & GitHub</li>
-        </ul>
-      </section>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="your@email.com" required />
 
-      <section class="card">
-        <h2>How It Works</h2>
-        <ol>
-          <li>Developer pushes code to GitHub</li>
-          <li>GitHub Actions builds Docker image & pushes to DockerHub</li>
-          <li>Jenkins pulls image & deploys it</li>
-        </ol>
-      </section>
-    </main>
+     
+      <button type="submit">Send Message</button>
+    </form>
 
     <footer>
-      <p>Made with ❤️ by <strong>Your Name</strong></p>
+      <p>Made with ❤️ by <strong>Sri</strong></p>
     </footer>
   </div>
 </body>
